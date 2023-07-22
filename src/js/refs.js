@@ -4,6 +4,9 @@ const BASE_URL = "https://pixabay.com/api/";
 const elements = {
     formEl: document.querySelector('.search-form'),
     galleryEl: document.querySelector('.gallery'),
+    guard: document.querySelector('.js-guard')
 }
+
+// let page = 1;
 
 export {API_KEY, elements, BASE_URL}
