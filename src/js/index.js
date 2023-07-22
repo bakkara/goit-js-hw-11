@@ -57,6 +57,7 @@ function handlerClick(evt) {
                     'Okay',
                 );
                 elements.galleryEl.innerHTML = createMarkup(data.hits);
+                const gallery = new SimpleLightbox('.gallery a').refresh();
                 if (data.totalHits > 40) {
                     observer.observe(elements.guard);
                 } else {
@@ -66,7 +67,7 @@ function handlerClick(evt) {
                     'Okay',
                 );
         }
-                const gallery = new SimpleLightbox('.gallery a').refresh();
+                
             }
 
         })

@@ -86,10 +86,37 @@ input:focus {
   width: 100%;
   box-shadow: 0px 1px 2px 1px rgba(2, 2, 63, 0.1);
 }
-
+@media screen and (min-width: 250px) {
+  .gallery {
+    max-width: 250px;
+  }
+  .info {
+    flex-wrap: wrap;
+  }
+  .info-item {
+    line-height: 1.2;
+    width: calc(100% / 2);
+  }
+}
 @media screen and (min-width: 428px) {
   .gallery {
     max-width: 428px;
+  }
+  .info {
+    display: flex;
+    gap: 2px;
+    flex-wrap: nowrap;
+    align-content: center;
+    padding: 0 10px 10px 10px;
+    justify-content: space-between;
+  }
+
+  .info-item {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.5;
   }
 }
 
@@ -102,9 +129,9 @@ input:focus {
   }
 }
 
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 1200px) {
   .gallery {
-    max-width: 1158px;
+    max-width: 1200px;
   }
   .photo-card {
     width: calc((100% - 20px * 3) / 4);
