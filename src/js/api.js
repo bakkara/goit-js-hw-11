@@ -18,7 +18,7 @@ async function getIMG(q) {
     }
 }
     try {
-    const response = await axios.get("", config);
+    const response = await axios.get('', config);
         console.log(response);
         return response.data;
   } catch (error) {
